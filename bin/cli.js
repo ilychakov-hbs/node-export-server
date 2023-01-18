@@ -20,6 +20,13 @@ const { printLogo, printUsage, pairArgumentValue } = require('../lib/utils');
 
 const { defaultConfig } = require('../lib/schemas/config.js');
 
+// Adding String.prototype.replaceAll
+if (typeof String.prototype.replaceAll === 'undefined') {
+  String.prototype.replaceAll = function (match, replace) {
+    return this.replace(new RegExp(match, 'g'), () => replace);
+  };
+}
+
 // The main start function to start server or do the direct export
 const start = async () => {
   const args = process.argv;
