@@ -2,7 +2,8 @@
   "name": "highcharts-export-server",
   "author": "Highsoft AS <support@highcharts.com> (http://www.highcharts.com/about)",
   "repository": {
-    "url": "https://github.com/highcharts/node-export-server",
+    "url": "https://github.com/ilychakov-hbs/node-export-server",
+    "branch": "master",
     "type": "git"
   },
   "version": "2.1.0",
